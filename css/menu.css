@@ -1,0 +1,85 @@
+/* Fuente de estilo para las letras */
+@font-face {
+    font-family: arial;
+    src: url('fuente/Ronachy.otf');
+}
+/* Estilos generales */
+body {
+    font-family: arial; /* Tipografía limpia y redondeada */
+    background-color: #fefaf6; /* Fondo suave */
+    color: #555; /* Texto en gris cálido */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Encabezado */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #ff8aa6; /* Rosa pastel */
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Botones */
+input[type="button"] {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 0.8rem 1.5rem;
+    margin: 1rem 0;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.primerBoton{
+    background: linear-gradient(135deg, #ff8aa6, #ffb6c1);
+}
+
+.segundoBoton{
+    background: linear-gradient(135deg, #ff8aa6, #6de69d); /* Degradado rosa a verde pastel */
+}
+
+/* Dinámicas de los botones */
+input[type="button"]:hover {
+    transform: scale(1.05); /* Ligeramente más grande */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Más profundidad */
+}
+
+input[type="button"]:active {
+    transform: scale(0.97); /* Pequeño efecto de presión */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Menor profundidad */
+}
+
+/* Cita */
+cite {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    color: #88a496; /* Verde suave */
+    font-style: italic;
+    margin-top: 3rem;
+}
+
+/* Responsive Design para diapositivos moviles.*/
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    input[type="button"] {
+        font-size: 1rem;
+        padding: 0.7rem 1.2rem;
+    }
+
+    cite {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,25 @@
+<!-- Esta es la pagina unJugadorDificil.html donde encontramos el juego Usuario vs IA. Modo Dificil-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un jugador Difícil</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script defer src="js/unJugadorDificil.js"></script>
+    <link rel="icon" href="tres-en-rayaa.png">
+</head>
+<body>
+    <h1>Un jugador - Modo Difícil</h1>
+    <div class="tablero" id="tablero">
+        <!-- Aquí se generarán las celdas dinámicamente -->
+    </div>
+    <div id="estado-juego" style="font-size: 50px;">Turno actual:</div> 
+    <div id="turno-actual" style="font-size: 50px;">X</div>
+
+    <button id="reiniciar-btn" onclick="reiniciarJuego()">Reiniciar</button>
+    <br>
+    <!-- Reproductor de música-->
+    <iframe id="music-frame" src="reproductor.html"></iframe>
+</body>
+</html>

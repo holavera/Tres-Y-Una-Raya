@@ -1,0 +1,102 @@
+/* Fuente de estilo para las letras */
+@font-face {
+    font-family: arial;
+    src: url('fuente/Ronachy.otf');
+}
+
+/* Estilos generales para el body */
+body {
+    font-family: arial;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #fefaf6; /* Color de fondo suave */
+    color: #333;
+    height: 100%; /* 100% del alto del viewport,para pantalla completa*/
+    overflow: hidden; /* Elimina el scroll */
+}
+
+/* Estilos generales para el encabezado*/
+h1 {
+    color: #FF77B6; /* Rosa suave */
+    font-size: 2.5em;
+    margin-top: 30px;
+}
+
+/* Estilos generales para proporcionar el tablero */
+.tablero {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+/* Estilos generales para las celdas */
+.celda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF; /* Blanco suave */
+    border: 2px solid #FF77B6; /* Borde rosa suave */
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #FF77B6;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+/* Dinamicas para las celdas */
+.celda:hover {
+    background-color: #FF77B6; /* Hover rosa suave */
+    color: #fff;
+}
+
+/* Estilo para los textos */
+#estado-juego, #turno-actual {
+    margin: 20px 0;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #FF77B6;
+}
+
+#turno-actual{
+    color: #FF77B6; /* Rosa suave */
+    font-weight: bold;
+}
+
+/* Estilo para los botones*/
+button {
+    padding: 12px 24px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border: none;
+    background-color: #A8E6CF; /* Verde suave */
+    color: #fff;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+/* Dinamicas para los botones*/
+button:hover {
+    background-color: #DCEDC1; /* Hover verde claro */
+}
+
+button:active {
+    background-color: #81C784; /* Verde más intenso al hacer clic */
+}
+
+/* Estilo para el texto donde esta X o O*/
+span {
+    color: #FF77B6; /* Rosa suave */
+    font-weight: bold;
+}
+
+/* Estilo para el iframe de la musica*/
+iframe#music-frame {
+    bottom: 0;
+    border: none;
+}

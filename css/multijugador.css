@@ -1,0 +1,112 @@
+/* Fuente de estilo para las letras */
+@font-face {
+    font-family: arial;
+    src: url('fuente/Ronachy.otf');
+}
+
+/* Estilos generales de html y body*/
+html, body {
+    font-family: arial;
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Asegura que el fondo cubra toda la ventana */
+    overflow: hidden; /* Elimina el scroll */
+    background: linear-gradient(135deg, #ff8aa6, #6de69d); /* Gradiente rosa y verde */
+    color: #333;
+    align-items: center; /* Centra el contenido */
+    text-align: center;
+
+}
+
+/* Estilos generales de la cabecera */
+h1 {
+    background: linear-gradient(135deg, #eed5db, #bcf4d2); /* Gradiente para el título */
+    -webkit-background-clip: text; /* Aplica el gradiente al texto */
+    color: transparent; /* Hace que el texto sea transparente para que se vea el gradiente */
+    font-size: 3em;
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave en el texto */
+}
+
+/* Estilos generales para proporcionar el tablero.*/
+.tablero {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+/* Estilos generales para proporcionar a las celdas.*/
+.celda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #ff8aa6; /* Rosa suave */
+    font-size: 2.5em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+/* Dinamicas para las celdas.*/
+.celda:hover[data-value="X"] {
+    background-color: #ff8aa6;
+    color: #ffffff;
+}
+
+.celda:hover[data-value="O"] {
+    background-color: #1be401;
+    color: #ffffff;
+}
+
+.celda[data-value="X"] {
+    color: #ff8aa6; /* Color predeterminado para X (rosa) */
+} 
+.celda[data-value="O"] {
+    color: #6de69d; /* Color verde para O */
+}
+
+/* Estilos para los textos.*/
+#estado-juego, #turno-actual {
+    margin: 20px 0;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #ffffff; /* Blanco para el estado */
+}
+
+#turno-actual{
+    color: #d2defa; /* Rosa suave para el turno */
+    font-weight: bold;
+}
+
+/* Estilos para los botones.*/
+button {
+    padding: 12px 24px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border: none;
+    background-color: #A8E6CF; /* Verde suave */
+    color: #fff;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+/* Dinámicas para los botones.*/
+button:hover {
+    background-color: #DCEDC1; /* Hover verde claro */
+}
+
+button:active {
+    background-color: #81C784; /* Verde más intenso al hacer clic */
+}
+
+/* Estilo para la etiqueta iframe que relaciona a la música.*/
+iframe#music-frame {
+    bottom: 0;
+    border: none;
+}

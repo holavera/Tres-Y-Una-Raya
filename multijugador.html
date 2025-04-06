@@ -1,0 +1,25 @@
+<!-- Esta es la multijugador.html donde encontramos el juego para dos humanos.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multijugador</title>
+    <script defer src="js/multijugador.js"></script>
+    <link rel="stylesheet" href="css/multijugador.css">
+    <link rel="icon" href="tres-en-rayaa.png">
+</head>
+<body>
+    <h1>Multijugador</h1>
+    <div class="tablero" id="tablero">
+        <!-- Aquí se generarán las celdas dinámicamente, gracias al metodo inicializar()  -->
+    </div>
+    <div id="estado-juego" style="font-size: 50px;">Turno actual:</div> 
+    <div id="turno-actual" style="font-size: 50px;">X</div>
+
+    <button id="reiniciar-btn" onclick="reiniciarJuego()">Reiniciar</button>
+    <br>
+    <!-- Reproductor de música-->
+    <iframe id="music-frame" src="reproductor.html"></iframe>
+</body>
+</html>

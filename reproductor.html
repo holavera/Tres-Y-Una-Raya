@@ -1,0 +1,22 @@
+<!-- Esto se trata un reproductor de música. Muy bueno!-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Música</title>
+</head>
+<body style="background: transparent;display: flex; justify-content: center; align-items: center;">
+
+    <div class="music-container">
+        <!-- Imagen que funciona como botón -->
+        <img id="toggle-sound" src="music/sound-on.png" alt="Control de sonido" width="50px">
+    </div>
+
+    <audio id="background-music" autoplay loop>
+        <source src="music/likeHim.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    <script src="music/musica.js"></script>
+</body>
+</html>
